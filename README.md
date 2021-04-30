@@ -11,11 +11,11 @@ docker build -t anubhavc9/docker-flask-test .
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 
-# Check the service NodePort
+## Check the service NodePort
 kubectl get svc
 
-# Check the local minikube cluster ip
+## Check the local minikube cluster ip
 minikube ip
 
-# Hit the following url on your browser
-http://<Minikube IP>:<NodePort>
+## Hit the following url on your browser
+http://"Minikube IP":"NodePort"
