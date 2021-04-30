@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-flask-test
+spec:
+  selector:
+    matchLabels:
+      app: docker-flask-test
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: docker-flask-test
+    spec:
+      containers:
+      - name: docker-flask-test
+        image: anubhavc9/docker-flask-test-2
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5000

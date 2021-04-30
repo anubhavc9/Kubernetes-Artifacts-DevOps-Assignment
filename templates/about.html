@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Flask WebApp</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$.getJSON('https://geoip-db.com/json/geoip.php?jsonp=?')
+			   .done(function (location) {
+				   $('#country').html(location.country_name);
+				   $('#state').html(location.state);
+				   $('#city').html(location.city);
+				   $('#latitude').html(location.latitude);
+				   $('#longitude').html(location.longitude);
+				   $('#ip').html(location.IPv4);
+			   });
+		</script>
+	</head>
+	<body>
+		<h2>Current Time in IST: {{gettime}}</h2>
+		<h2>Hostname: {{hname}}</h2>
+		<form runat="server" id="frm1">
+        <fieldset style="width: 350px;">
+            <legend>Current Location Details</legend>
+			<div>City:
+                <asp:Label runat="server" ID="city"></asp:Label>
+			</div>
+			<div>
+                Region:
+                <asp:Label runat="server" ID="state"></asp:Label>
+			</div>
+            <div>
+                Country:
+                <asp:Label runat="server" ID="country"></asp:Label>
+            </div>
+			<div>
+				IP Address: <asp:Label runat="server" ID="ip"></asp:Label>
+			</div>
+        </fieldset>
+    </form>
+	</body>
+</html>>
