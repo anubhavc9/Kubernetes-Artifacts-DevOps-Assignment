@@ -1,5 +1,5 @@
 # Kubernetes-Artifacts-DevOps-Assignment
-A simple dockerized webapp that can be deployed on a local Kubernetes cluster
+A simple Dockerized Flask Web App that can be deployed on a local Kubernetes cluster
 
 ## Clone the repository on your local machine
 git clone https://github.com/anubhavc9/Kubernetes-Artifacts-DevOps-Assignment.git
@@ -18,5 +18,5 @@ git clone https://github.com/anubhavc9/Kubernetes-Artifacts-DevOps-Assignment.gi
 `minikube ip`
 
 ## You can access the Flask application on following 2 end-points:
-- https://`Minikube IP`:`NodePort`
-- https://`Minikube IP`:`NodePort`/pucsd
+- https://`Minikube IP:NodePort`
+- https://`Minikube IP:NodePort`/pucsd
