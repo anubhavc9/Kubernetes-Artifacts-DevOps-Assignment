@@ -1,5 +1,5 @@
 # Kubernetes-Artifacts-DevOps-Assignment
-A simple Dockerized Flask Web App that can be deployed on a local Kubernetes cluster
+### A simple Dockerized Flask Web App that can be deployed on a local Kubernetes cluster
 
 ## Clone the repository on your local machine
 git clone https://github.com/anubhavc9/Kubernetes-Artifacts-DevOps-Assignment.git
